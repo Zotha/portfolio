@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!-- make site mobile responsive -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+   <!-- end responsive -->
+  
+  <!-- link text styles -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|Raleway|Titillium+Web" rel="stylesheet">
+  
+  <!-- bootstrap css/js stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/87f5d8eb7e.js"></script>
+  
+  <style>
+  /* make all text black */
+body {
+  color: black;
+  background-color: #F6F8C4;
+}
+
+/* add border, gradient, and 
+fixed positioning to header area*/
+.header {
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  border: black solid 1px;
+  max-height: 50px;
+  _background-image: blue;
+  background-image: -webkit-linear-gradient(#e6e6e6, #1a53ff);
+  color: black;
+  padding-top: 7px;
+  padding-left: 5px;
+}
+
+/* style header text */
+#banner-text{
+  font-size: 28px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* style header image */
+#note-icon {
+  float: left;
+  margin-right: 10px;
+  height: 28px;
+  width: auto;
+  padding-top: 2px;
+  padding-left: 5px;
+}
+
+
+.nav {
+  margin: 60px;
+}
+
+ul {
+  padding: 3px;
+  font-size: 16px; 
+}
+
+/* style and position
+of list*/
+.tablist {
+  z-index: 1;
+  list-style: none; 
+  height: 2em;
+  margin-top: 3.5em;
+  margin-left: .6%;
+  padding-left: 1.5%
+  border: none;
+  /*padding-top:51px;*/
+   position: fixed;
+  right: 0%;
+  top: 47px;;
+  width: 100%;
+  margin-top: -0.01em;
+}
+
+/* unsure which tab layout
+works best for design */
+.tablist li {
+  /*
+  float: left;
+  */
+  margin-right: .5em;
+  margin-left: .5em;
+}
+
+/* border and text in
+navigation */
+.tablist li a {
+  display: block;
+  padding: 0 1em;
+  text-decoration: none;
+  border: 0.06em solid #000;
+  border-bottom: 0;
+  font :bold 0.88em/2em 'Raleway', sans-serif;
+  color: #000000;
+  background-color: #F6F8C4;
+webkit-border-top-right-radius: 0.50em;
+  -webkit-border-top-left-radius: 0.50em;
+  -moz-border-radius-topright: 0.50em;
+  -moz-border-radius-topleft: 0.50em;
+  border-top-right-radius: 0.50em;
+  border-top-left-radius: 0.50em;
+}
+
+/* gradient on hover */
+.tablist li a:hover {
+  text-decoration: none;
+  background-image: -webkit-linear-gradient(#E6DD93, #F0EFAB);
+}
+
+/* style content in tab body */
+.tab-content, {
+  color: black;
+  background-color: #F6F8C4;
+}
+
+/* style box and position of main text */
+#main {
+  border: black solid 1px;
+  border-top: 0px;
+  border-bottom: 0px;
+  clear: left;
+  margin: .8%;
+  margin-top: 135px;
+  padding-left: 1.2%;
+  font-family: 'Titillium Web'; sans-serif;
+}
+
+#raye {
+  margin-top: 30px;
+  margin-right: 20px;
+  border-radius: 50%;
+  float: left;
+}
+
+#about {
+  padding-top: 7px;
+  color: black;
+}
+
+#proj-info {
+  font-size: 1.2em;
+  font-family: 'PT Sans', sans-serif;
+}
+
+#proj-info a:link {
+  color: #ff8000;
+  text-decoraton: none;
+}
+#proj-info a:hover { 
+  color: #ff471a;
+  text-decoration: none;
+}
+
+.thumbnail {
+  z-index: -1;
+  height: auto;
+  width: auto;
+}
+
+#contact-info, #contact-me {
+  text-align: center;
+}
+
+#contact-info {
+  font-size: 1.2em;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* contact form */
+* {
+	margin: 0;
+	padding: 0; 
+  font-family: 'Raleway', sans-serif;
+}
+
+#page-wrap {
+	width: 660px;
+	background: white;
+	padding: 20px 50px 20px 50px;
+	margin: 20px auto;
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
+}
+
+/* box height and width */
+#contact-area {
+	width: 80%;
+	margin-top: 25px;
+  font-size: 1em;
+	margin-bottom: 15px;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 100%;
+	font-size: 1em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #e6e6e6;
+}
+
+#contact-area textarea {
+	height: 90px;
+}
+
+/* fillable boxes change border */
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid #000;
+  background-image: white;
+}
+
+/* submit button idle */
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+  font-family: 'Raleway', sans-serif;
+}
+/* submut button hover */
+#contact-area input.submit-button:hover  {
+   background-image: -webkit-linear-gradient(#E6DD93, #F0EFAB);
+  border: #666666 solid 1px;
+  font-size: 1.2em;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+
+/* text */
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.4em;
+}
+/* end contact form */
+
+/* position footer icons */
+#icons {
+  font-size: 3em;
+  text-align: center;
+  border: black solid 1px;
+  border-top: 0px;
+  margin: .25em;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+/* add margin between */
+#codepen, #github, #fcc {
+  margin-right: 20px;
+}
+/* change icon color */
+a:link { 
+  color: #ff8000;
+  text-decoraton: none;
+}
+/* change visited icon color */
+#icons a:visited { 
+  color: #e68a00;
+  text-decoration: none;
+}
+/* change hover icon color */
+#icons a:hover { 
+  color: #ff471a;ff471a
+  text-decoration: none;
+}
+  </style>
+
+ 
+  <title>My Portfolio</title>
+</head>
+
+<body>
+<div id="banner" class="header">
+<img id="note-icon" src="http://i64.tinypic.com/2gvizvd.jpg"> 
+    <p id="banner-text"> portfolio.txt - PadNote</p>
+  </div> <!-- close banner-->
+ 
+    
+<ul class="tablist" data-spy="affix" data-offset-top="197">
+  <li class="active"><a data-toggle="tab" href="#home">About</a></li>
+  <li><a data-toggle="tab" href="#projects">Projects</a></li>
+  <li><a data-toggle="tab" href="#contact">Contact</a></li>
+</ul>
+
+    
+
+<div id="main">
+ <div class="container">
+  <div class="tab-content">
+  <div id="home" class="tab-pane active">
+    
+    <img id="raye" src="http://i64.tinypic.com/1z2zkud.jpg">
+    <div id="about">
+    <h1>Racheal Szumski</h1>
+    <h2>Designer. Scholar. Front End Developer</h2>
+    </div>
+    
+    <p>Hi there! My name is Racheal, and I'm looking forward to working with you!</p>
+    <p>I'm currently studying HTML, CSS and JS through Free Code Camp, with a goal of becoming a full stack developer by the end of 2018. I'm specializing in minimalistic and/or quirky website design (as is evidenced by my Word-inspired portfolio), but I can, and will, happily do more complex designs. I'm open to crafting beautiful, striking websites for folks from all walks of life; provided the content you're asking me to create isn't illegal in your country or mine, I am more than willing to get started right away. </p>
+
+    </div> <!-- close main -->
+    
+<div id="projects" class="tab-pane">
+  <div id="proj-info">
+  <h1>Projects</h1>
+<p>Currently my work consists of creating templates with CSS, most notably as part of the <a href="http://ourverse.fireflyonline.website/index.php/Welcome_to_Our_%27Verse">Firefly Online Wiki Editorial Team</a>. Below are my favorites.</p>
+   </div> <!-- close proj-info -->
+
+  <div class="row">
+    <div class="col-xs-4">
+      <a href="http://ourverse.fireflyonline.website/index.php/Dai_O%27Dell:_%22Don%27t_Fear_the_Shadows%22_Chapter_01" id="fear-shadows" class="inline-block">
+        <img class="thumbnail img-responsive" src="http://i66.tinypic.com/k9j1pw.jpg"></a>
+    </div>
+    
+    <div class="col-xs-4">
+      <a href="http://ourverse.fireflyonline.website/index.php/Aphrodite_(planet)" id="aphrodite" class="inline-block"> 
+        <img class="thumbnail img-responsive" src="http://i63.tinypic.com/4hyyo7.jpg"></a>
+    </div>
+    
+    <div class="col-xs-4">
+      <a href="http://ourverse.fireflyonline.website/index.php/Julia_Arrow" id="julia" class="inline-block">
+        <img class="thumbnail img-responsive" src="http://i65.tinypic.com/4nwo7.jpg"></a>
+    </div>
+  </div> <!-- close rows -->
+
+  
+</div> <!-- close projects -->
+
+<div id="contact" class="tab-pane">
+   
+  <h1 id="contact-me">Contact Me:</h1>
+  <div id="contact-info">
+    <p><b>Phone:</b> 
+      <br/>555-555-5555 <br/>
+      <b>Fax:</b> 
+      <br/>555-555-5556</br/>
+    <b>Address:</b>
+    <br/>1000 Rt 38 <br/>
+        Mt Holly, NJ 08060</p>
+  </div>
+  
+
+<div id="contact-area">
+				<form method="post" action="contactengine.php">
+				<label for="Name">Name:</label>
+				<input type="text" name="Name" id="Name" />
+	
+				<label for="Email">Email:</label>
+				<input type="text" name="Email" id="Email" />
+				
+				<label for="Message">Message:</label><br />
+				<textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+
+				<input type="submit" name="submit" value="Submit" class="submit-button" />
+			</form>
+			
+			<div style="clear: both;"></div></p>
+    </div> <!-- close contact-area  -->
+</div> <!-- close contact -->
+</div> <!-- close tab content -->
+    </div> <!-- close container -->
+  </div> <!-- close main -->
+
+<footer>
+  <div id="icons">
+    <!-- Codepen -->
+   <a href="http://codepen.io/Zotha/pens/public/#" id="codepen"> <i class="fa fa-codepen" aria-hidden="true"></i> </a>
+    <!-- Github -->
+    <a href="https://github.com/Zotha" id="github"> <i class="fa fa-github" aria-hidden="true"></i> </a>
+    <!-- FCC -->
+    <a href="https://www.freecodecamp.com/zotha" id="fcc"> <i class="fa fa-free-code-camp" aria-hidden="true"></i> </a>
+    <!-- Linkedin -->
+    <a href="https://www.linkedin.com/in/racheal419/" id="linkedin"> <i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+  </div> <!-- close icons -->
+
+  </div>
+</footer>
+
+// dynamic tabs
+jQuery(document).ready(function ($) {
+        $('#tabs').tab();
+    });
+</body>
+</html>
