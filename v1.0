@@ -388,9 +388,5 @@ a:link {
   </div>
 </footer>
 
-// dynamic tabs
-jQuery(document).ready(function ($) {
-        $('#tabs').tab();
-    });
 </body>
 </html>
