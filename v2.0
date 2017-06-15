@@ -1,0 +1,348 @@
+
+<html>
+<head>
+	<title>Racheal Szumski</title>
+
+ 	<!-- make site mobile responsive -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  	<!-- end responsive -->
+
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+  	 <link href="https://fonts.googleapis.com/css?family=Pinyon+Script|Italianno" rel="stylesheet"> 
+
+  	 <script src="https://use.fontawesome.com/87f5d8eb7e.js"></script>
+
+
+    <script type="text/javascript">
+       	// intverval of 3(000) seconds
+    	setInterval(PageRefresher, 3000);
+    	// calls function, reloads current location
+    	function PageRefresher() {
+    		location.reload();
+    	}
+    </script>
+<style>
+.navbar {
+  background-color: #00004d;
+  font-size: 2em;
+  padding-left: 5px;
+}
+
+.navbar a {
+  color: #e6b800;
+}
+
+.background {
+	content: ::;
+    background-image: url("http://i64.tinypic.com/5b69du.jpg");
+    display: cover;
+    position: relative;
+  margin-top: 30px;
+	z-index: 1;
+}
+
+.background::after {
+    content: "";
+    background: white;
+	opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 25px;
+    border-radius: 15px;
+    z-index: -1;
+    margin-bottom: 15px;
+}
+
+.background > * {
+    z-index: 10;
+}
+
+
+.intro {
+	color: white;
+  font-size: 5em;
+ 	text-align: center;
+  text-shadow: 3px 2px black;
+  font-family: "Pinyon Script", cursive;
+  padding: 26px 5px 1% 5px;
+}
+
+.about {
+	color: white;
+  font-size: 3em;
+ 	text-align: center;
+  text-shadow: 2px 2px black;
+  font-family: "Italianno", cursive;
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+.intro2 {
+	color: black;
+  font-size: 5em;
+ 	text-align: center;
+  font-family: "Pinyon Script", cursive;
+  margin-top: 25px;
+}
+
+.resize {
+  width: 40%; 
+  height: 300px;
+  padding: 10px;
+  box-shadow: 5px 10px 5px #888888;
+  margin: 10px 30%;
+}
+
+.intro3 {
+  color: #e6b800;
+  font-size: 5em;
+ 	text-align: center;
+  font-family: "Pinyon Script", cursive;
+  margin-top: 25px;
+  
+}
+
+.blue {
+  background-color: #000066;
+}
+
+/* contact form */
+* {
+	margin: 0;
+	padding: 0; 
+  font-family: 'Pinyon Script', cursive;
+  color: #e6b800;
+}
+
+#page-wrap {
+	width: 660px;
+	background: white;
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
+}
+
+/* box height and width */
+#contact-area {
+	width: 80%;
+	margin-top: 25px;
+  font-size: 1em;
+	margin-bottom: 15px;
+  margin-left: 10%;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 100%;
+	font-size: 1em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #e6b800;
+}
+
+#contact-area textarea {
+	height: 90px;
+}
+
+/* fillable boxes change border */
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 3px solid yellow;
+  background-image: white;
+}
+
+/* submit button idle */
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 1.4em;
+  color: #e6b800;
+  background-color: white;
+}
+/* submut button hover */
+#contact-area input.submit-button:hover  {
+  border: blue solid 1px;
+  font-size: 1.4em;
+  font-family: 'Pinyon Script', cursive;
+  color: blue;
+}
+
+/* text */
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.4em;
+}
+/* end contact form */
+
+#icons {
+  font-size: 3em;
+  text-align: center;
+  margin: .25em;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+/* add margin between */
+#codepen, #github, #fcc {
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+/* change visited icon color */
+#icons a:visited { 
+  color: #e68a00;
+  text-decoration: none;
+}
+/* change hover icon color */
+#icons a:hover { 
+  color: #ff471a;
+  text-decoration: none;
+}
+
+
+
+@media screen only and (max-width: 720px) {
+	.intro {
+		font-size: .1em;
+	}
+
+	.about {
+		font-size: .1em;
+	}
+	
+	.intro2 {
+		color: black;
+  	font-size: .1em;
+ 		text-align: center;
+  	font-family: "Pinyon Script", cursive;
+    padding-top: 50px;
+	}
+  
+  .resize {
+    width: 100%; 
+    height: 400px;
+    float: center;
+    padding: 10px;
+    box-shadow: 5px 10px 5px #888888;
+    margin: 10px;
+  }
+
+	
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+  
+ <nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav> 
+  
+
+<div class="background">
+<div>
+<p class="intro">Racheal Szumski</p>
+<p class="intro">Designer. Scholar. Front End Developer.</p>
+<p class="about">Hello there! I'm looking forward to working with you!</p>
+<p class="about">I'm currently studying HTML, CSS and JavaScript through Free Code Camp, with a goal of becoming a full stack developer by the end of 2018. I'm specializing in minimalistic and/or quirky website design, but I can, and happily will, create more complex pages. I'm open to crafting beautiful, striking websites for folks from all walks of life, no matter how alternative. Drop me a line and I can get started right away!</p>
+</div>
+</div>
+
+    <div id="portfolio">
+	<p class="intro2">Portfolio</p>
+
+
+        <div id="firefly" class="picture">
+      <a target="_blank" href="https://codepen.io/Zotha/full/VbWXrR/" class="inline-block small">
+   	 <img class="img img-responsive resize" src="http://img.photobucket.com/albums/v693/candycoatedtoxin/firefly.png"></a> 
+   	 </div>
+
+        <div id="portfolio2" class="picture">
+      <a target="_blank" href="https://codepen.io/Zotha/pen/aWQaRR" class="inline-block small"> 
+      <img class="img img-responsive resize" src="http://img.photobucket.com/albums/v693/candycoatedtoxin/portfolio.jpg"></a>
+      </div>
+ 
+ 
+        <div id="steph" class="picture">
+      <a target="_blank" href="https://codepen.io/Zotha/pen/zwPWYG" class="inline-block small"> 
+      <img class="img img-responsive resize" src="http://img.photobucket.com/albums/v693/candycoatedtoxin/steph.jpg"></a>
+      </div>
+
+        <div id="FFO-julia" class="picture">
+      <a target="_blank" href="http://ourverse.fireflyonline.website/index.php/Julia_Arrow" class="inline-block small">
+   	 <img class="img img-responsive resize" src="http://img.photobucket.com/albums/v693/candycoatedtoxin/julia.jpg"></a>
+      </div>
+ 
+        <div id="FFO-planet" class="picture">
+      <a target="_blank" href="http://ourverse.fireflyonline.website/index.php/Aphrodite_(planet)" class="inline-block small">
+      <img class="img img-responsive resize" src="http://img.photobucket.com/albums/v693/candycoatedtoxin/julia-planet.jpg"> 
+      </a>
+      </div>
+ 
+        <div id="construction" class="picture">
+      <a target="_blank" href="#" class="inline-block small"> 
+      <img class="img img-responsive resize" src="http://img.photobucket.com/albums/v693/candycoatedtoxin/under-construction02.jpg"> 
+     </a>
+      </div>
+  
+</div><!--close portfolio-->
+  
+  <div id="contact" class="blue">
+    <p class="intro3">Contact</p>
+  
+    <div id="contact-area">
+				<form method="post" action="contactengine.php">
+				<label for="Name">Name:</label>
+				<input type="text" name="Name" id="Name" />
+	
+				<label for="Email">Email:</label>
+				<input type="text" name="Email" id="Email" />
+				
+				<label for="Message">Message:</label><br />
+				<textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+
+				<input type="submit" name="submit" value="Submit" class="submit-button" />
+			</form>
+			
+			<div style="clear: both;"></div></p>
+    </div> <!-- close contact-area  -->
+  
+  
+  <div id="icons">
+    <!-- Codepen -->
+   <a target="_blank" href="https://codepen.io/Zotha/pens/public/#" id="codepen"> <i class="fa fa-codepen" aria-hidden="true"></i> </a>
+    <!-- Github -->
+    <a target="_blank" href="https://github.com/Zotha" id="github"> <i class="fa fa-github" aria-hidden="true"></i> </a>
+    <!-- FCC -->
+    <a target="_blank" href="https://www.freecodecamp.com/zotha" id="fcc"> <i class="fa fa-free-code-camp" aria-hidden="true"></i> </a>
+    <!-- Linkedin -->
+    <a target="_blank" href="https://www.linkedin.com/in/racheal419/" id="linkedin"> <i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+  </div> <!-- close icons -->
+  </div><!--close contact-->
+  
+  
+
+
+
+
+</body>
+</html>
